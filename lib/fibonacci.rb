@@ -5,5 +5,24 @@
 # ....
 # e.g. 6th fibonacci number is 8
 def fibonacci(n)
-  raise NotImplementedError
+  if n.class != Integer
+    raise ArgumentError.new("Argument must be integer.")
+  elsif n < 0
+    raise ArgumentError.new("Argument must be positive integer.")
+  elsif n == 0
+    return 0
+  end
+
+  sum = 1
+  x = 0
+  y = 1
+
+  (n-1).times do
+    sum = x + y
+    x = y
+    y = sum
+  end
+
+  return sum
+  
 end
