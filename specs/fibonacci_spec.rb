@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/reporters'
 require_relative '../lib/fibonacci'
+require 'minitest/pride'
 
 describe "fibonacci" do
   describe "basic tests" do
