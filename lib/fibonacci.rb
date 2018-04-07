@@ -15,9 +15,9 @@ def fibonacci(n)
 
   num_one = 0
   num_two = 1
-  count = n - 1
   fib_n = 1
 
+  count = n - 1
 
   count.times do
     fib_n = num_one + num_two
