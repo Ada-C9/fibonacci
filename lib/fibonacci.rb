@@ -5,5 +5,10 @@
 # ....
 # e.g. 6th fibonacci number is 8
 def fibonacci(n)
-  raise NotImplementedError
+  result = [0,1]
+  raise ArgumentError.new if n == nil || n < 0
+  n.times do |i|
+    result << result[i] + result[i+1]
+  end
+  return result[n]
 end
