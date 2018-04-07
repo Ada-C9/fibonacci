@@ -4,7 +4,7 @@
 # Recursive solution has factorial time complexity or O(2^n): the number of function calls (ie, operations) nearly doubles with each increase in input
 
 # Iterative solution has constant space complexity or O(1): the amount of memory taken is constant regardless of input size
-# Iterative solution has linear time complexity or O(n): the number of operations (ie, runs of the loop) is as long as the unput
+# Iterative solution has linear time complexity or O(n): the number of operations (ie, runs of the loop) are equivalent to the size of the unput
 
 def fibonacci(n)
   if n == nil || n < 0
