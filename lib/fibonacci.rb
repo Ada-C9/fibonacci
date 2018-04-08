@@ -5,5 +5,29 @@
 # ....
 # e.g. 6th fibonacci number is 8
 def fibonacci(n)
-  raise NotImplementedError
+  return 0 if n == 0
+
+  if n == nil
+    raise ArgumentError.new("Nil object is not an integer")
+  end
+
+  if n < 0
+    raise ArgumentError.new("Negative input")
+  end
+
+  return 1 if n == 1
+
+  k = 0
+  j = 1
+  i = 2
+  result = 0
+
+  while i <= n
+    result = k + j
+    k = j
+    j = result
+    i += 1
+  end
+  return j
+
 end
