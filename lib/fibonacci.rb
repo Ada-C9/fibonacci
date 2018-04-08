@@ -5,5 +5,7 @@
 # ....
 # e.g. 6th fibonacci number is 8
 def fibonacci(n)
-  raise NotImplementedError
+  raise ArgumentError.new("Must be positive int") if !n.is_a?(Integer) || n < 0
+
+  n < 2 ? n : fibonacci(n-1) + fibonacci(n-2)
 end
