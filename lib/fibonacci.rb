@@ -23,12 +23,12 @@ def fibonacci(n)
     fib_prev = fib_zero + fib_one
     fib_next_prev = fib_one
     fib = fib_prev
-    position = 2
-    while position < n
+    count = 2
+    while count < n
       fib = fib_prev + fib_next_prev
       fib_next_prev = fib_prev
       fib_prev = fib
-      position += 1
+      count += 1
     end
   end
 
