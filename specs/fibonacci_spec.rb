@@ -24,10 +24,10 @@ describe "fibonacci" do
       fibonacci(6).must_equal 8
     end
   end
-
-  # check for edge cases
+  #
+  # # check for edge cases
   describe "edge cases" do
-    # if the parameter is an object, check for nil
+  #   # if the parameter is an object, check for nil
     it "nil object is not an integer" do
       proc {fibonacci(nil)}.must_raise ArgumentError
     end
