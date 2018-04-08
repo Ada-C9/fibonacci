@@ -6,7 +6,7 @@ describe "fibonacci" do
   describe "basic tests" do
     it "fibonacci of 1" do
       fibonacci(1).must_equal 1
-    end
+    end 
 
     it "fibonacci of 3" do
       fibonacci(3).must_equal 2
