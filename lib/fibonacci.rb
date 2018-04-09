@@ -5,5 +5,24 @@
 # ....
 # e.g. 6th fibonacci number is 8
 def fibonacci(n)
-  raise NotImplementedError
+  if n == nil || n < 0
+    raise ArgumentError.new
+  end
+
+  i = 0
+  j = 1
+  x = 0
+
+  if n == 1
+    return 1
+  elsif n == 0
+    return 0
+  else
+    (n - 1).times do
+      x = i + j
+      i = j
+      j = x
+    end
+    return x
+  end
 end
